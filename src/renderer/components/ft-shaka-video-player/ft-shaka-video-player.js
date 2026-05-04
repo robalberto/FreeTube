@@ -1013,9 +1013,6 @@ export default defineComponent({
         }
       }
 
-      // make scrolling over volume slider change the volume
-      container.value.querySelector('.shaka-volume-bar').addEventListener('wheel', mouseScrollVolumeHandler)
-
       // title overlay when the video is fullscreened
       // placing this inside the controls container so that we can fade it in and out at the same time as the controls
       const fullscreenTitleOverlay = document.createElement('h1')
